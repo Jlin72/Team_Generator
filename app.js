@@ -63,7 +63,6 @@ function teamCreate () {
             .then(answer => {
                 const manager = new Manager(answer.name, answer.id, answer.manageremail, answer.officenumber)
                 team.push(manager);
-                console.log(team);
                 addMembers();
             })
     }
@@ -116,7 +115,6 @@ function teamCreate () {
         .then(answer => {
             const engineer = new Engineer(answer.name, answer.id, answer.engineeremail, answer.github);
             team.push(engineer);
-            console.log(team);
             addMembers();
         })
     }
@@ -169,7 +167,6 @@ function teamCreate () {
         .then(answer => {
             const engineer = new Intern(answer.name, answer.id, answer.internemail, answer.school);
             team.push(engineer);
-            console.log(team);
             addMembers();
         })
     }
