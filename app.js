@@ -86,7 +86,7 @@ function teamCreate () {
                 name: "id",
                 message:"Enter an id for the engineer",
                 validate: function (answer) {
-                    if (answer === "") {
+                    if (answer === "" || answer.length < 4) {
                         return "Please enter an ID";
                     } return true;
                 }
@@ -138,7 +138,7 @@ function teamCreate () {
                 name: "id",
                 message:"Enter an id for the intern.",
                 validate: function (answer) {
-                    if (answer === "") {
+                    if (answer === "" || answer.length < 4) {
                         return "Please enter an ID";
                     } return true;
                 }
