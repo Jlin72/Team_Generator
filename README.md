@@ -28,6 +28,9 @@
   ![HTML file created from the app](https://i.imgur.com/qZonT0U.png)
   Here is a picture of the how the html file looks like on the browser.
   ![HTML file on browser](https://i.imgur.com/GOEwnNz.png)
+
+  Here is a video link to a video of the application in action:
+  https://www.youtube.com/watch?v=OHWSS1nWiyU&feature=youtu.be
 ## Credits
   Jhonny Lin (Github username: jlin72 https://github.com/Jlin72/)
 ## License
