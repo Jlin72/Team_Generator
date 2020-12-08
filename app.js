@@ -86,7 +86,7 @@ function teamCreate () {
                 name: "id",
                 message:"Enter an id for the engineer",
                 validate: function (answer) {
-                    if (answer === "") {
+                    if (answer === "" || answer.length < 4) {
                         return "Please enter an ID";
                     } return true;
                 }
@@ -128,7 +128,7 @@ function teamCreate () {
                 name: "name",
                 message:"Enter the name of your intern.",
                 validate: function (answer) {
-                    if(answer === "" || /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(answer) === true || /\d/.test(answer) === true) {
+                    if(answer === "" || /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(answer) === true || /\d/.test(answer) === true) {
                         return "Please enter a name for the manager, no special characters, or numbers. If you see this error correct the last mistake and press enter when done";
                     } return true;
                 }
@@ -138,7 +138,7 @@ function teamCreate () {
                 name: "id",
                 message:"Enter an id for the intern.",
                 validate: function (answer) {
-                    if (answer === "") {
+                    if (answer === "" || answer.length < 4) {
                         return "Please enter an ID";
                     } return true;
                 }
